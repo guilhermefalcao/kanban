@@ -19,7 +19,9 @@ module.exports = {
       red500: "#ea5555",
       red100: "#ff9898",
     },
-    extend: {},
+    fontFamily: {
+      sans: ["Plus Jakarta Sans"],
+    },
   },
   plugins: [],
 };
