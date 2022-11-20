@@ -3,3 +3,33 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
+@layer base {
+  h1 {
+    @apply text-[24px] font-bold leading-[30px] text-gray900;
+  }
+  h2 {
+    @apply text-[18px] font-bold leading-[23px] text-gray900;
+  }
+  h3 {
+    @apply text-[15px] font-bold leading-[19px] text-gray900;
+  }
+  h4 {
+    letter-spacing: 2.4px;
+    @apply text-[12px] font-bold leading-[15px] text-gray400;
+  }
+  .body-text-l {
+    @apply text-[13px] font-medium not-italic leading-[23px];
+  }
+  .body-text-m {
+    @apply text-[12px] font-bold not-italic leading-[15px];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    left: calc(50% - 132px / 2);
+    top: calc(50% - 19px / 2 + 0.5px);
+    @apply absolute h-[19px] w-[132px] rounded-3xl bg-purple text-white;
+  }
+}

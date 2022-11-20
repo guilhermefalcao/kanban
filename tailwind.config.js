@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -20,7 +21,7 @@ module.exports = {
       red100: "#ff9898",
     },
     fontFamily: {
-      sans: ["Plus Jakarta Sans"],
+      sans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
