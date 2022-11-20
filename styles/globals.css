@@ -60,4 +60,8 @@
     top: calc(50% - 19px / 2 + 0.5px);
     @apply rounded-3xl bg-red500 py-[15px] px-[35px] text-center text-[13px] text-white hover:bg-red100;
   }
+
+  .checkbox {
+    @apply border-2;
+  }
 }
