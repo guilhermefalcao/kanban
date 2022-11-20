@@ -27,9 +27,37 @@
 }
 
 @layer components {
-  .btn-primary {
+  .btn-primary-l {
     left: calc(50% - 132px / 2);
     top: calc(50% - 19px / 2 + 0.5px);
-    @apply absolute h-[19px] w-[132px] rounded-3xl bg-purple text-white;
+    @apply rounded-3xl bg-purple py-[20px] px-[35px] text-center text-[15px] text-white hover:bg-lightPurple;
+  }
+
+  .btn-primary-s {
+    left: calc(50% - 132px / 2);
+    top: calc(50% - 19px / 2 + 0.5px);
+    @apply rounded-3xl bg-purple py-[15px] px-[35px] text-center text-[13px] text-white hover:bg-lightPurple;
+  }
+  .btn-secondary-l {
+    left: calc(50% - 132px / 2);
+    top: calc(50% - 19px / 2 + 0.5px);
+    @apply rounded-3xl bg-purple bg-opacity-10 py-[20px] px-[35px] text-center text-[15px] text-purple hover:bg-purple hover:bg-opacity-20;
+  }
+
+  .btn-secondary-s {
+    left: calc(50% - 132px / 2);
+    top: calc(50% - 19px / 2 + 0.5px);
+    @apply rounded-3xl bg-purple bg-opacity-10 py-[15px] px-[35px] text-center text-[13px] text-purple hover:bg-purple hover:bg-opacity-20;
+  }
+  .btn-destructive-l {
+    left: calc(50% - 132px / 2);
+    top: calc(50% - 19px / 2 + 0.5px);
+    @apply rounded-3xl bg-red500 py-[20px] px-[35px] text-center text-[15px] text-white hover:bg-red100;
+  }
+
+  .btn-destructive-s {
+    left: calc(50% - 132px / 2);
+    top: calc(50% - 19px / 2 + 0.5px);
+    @apply rounded-3xl bg-red500 py-[15px] px-[35px] text-center text-[13px] text-white hover:bg-red100;
   }
 }
