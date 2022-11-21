@@ -37,8 +37,12 @@ export default function Home() {
         <button className="btn-destructive-l">Button Destructive (L)</button>
         <button className="btn-destructive-s">Button Destructive (S)</button>
       </div>
-      <input type="checkbox" className="checkbox" id="checkbox-idle" />{" "}
-      <label htmlFor="checkbox-idle">Idle</label>
+      <div className="checkbox-container">
+        <input type="checkbox" className="checkbox" id="checkbox-idle" />{" "}
+        <label className="checkbox-label" htmlFor="checkbox-idle">
+          Idle
+        </label>
+      </div>
     </div>
   );
 }

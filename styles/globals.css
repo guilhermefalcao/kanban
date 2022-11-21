@@ -62,6 +62,17 @@
   }
 
   .checkbox {
-    @apply border-2;
+    /* border: 1px solid rgba(130, 143, 163, 0.248914); */
+    /* border-radius: 2px; */
+    /* @apply appearance-none rounded-sm border-2 border-solid border-gray400 bg-white checked:bg-purple; */
+  }
+  .checkbox-completed {
+    @apply line-through;
+  }
+  .checkbox-container {
+    @apply rounded pl-[12px] hover:bg-purple hover:opacity-[0.25];
+  }
+  .checkbox-label {
+    @apply ml-[16px] text-[12px]  font-bold not-italic leading-[15px] mix-blend-normal;
   }
 }
